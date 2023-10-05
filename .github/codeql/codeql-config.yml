@@ -1,0 +1,9 @@
+# https://docs.github.com/en/enterprise-server@3.7/code-security/code-scanning/creating-an-advanced-setup-for-code-scanning/customizing-your-advanced-setup-for-code-scanning#using-a-custom-configuration-file
+# ignore data/static/codefixes/
+
+query-filters:
+  - exclude:
+      id: js/hardcoded-credentials
+
+paths-ignore:
+  - 'data/static/codefixes/**'
